@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* Container */
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%);
+        }
+
+
+        .card {
+            width: 360px;
+            height: 570px;           
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            gap: 30px;
+            padding: 20px;
+
+
+        }
+
+        .card-img {
+            background-color: #CFBDA5;
+            width: 330px;
+            height: 90%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-img img {
+            height: 60%;
+            width: 60%;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .txt-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+        }
+
+        .txt-box h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="./LinkedIn Profile QRCode.png" alt="LinkedIN Profile QRCode" width="200">
+
+            </div>
+            <div class="txt-box">
+                <h2>Improving my front-end skills by building projects </h2>
+                <p>Scan the QR Code to visit my LinkedIN profile where you will see latest updates regarding my
+                    front-end development projects.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
