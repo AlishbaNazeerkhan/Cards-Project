@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        
+        body{
+            height:100vh;
+            width: 100vw;
+            background: #304352;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #d7d2cc, #304352);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .container {
+            width: 350px;       
+            padding-inline: 20px;
+        }
+
+        .card{
+            width: 400px;
+            height: 570px;
+            background-color: white;
+            border-radius: 20px;
+            margin-block: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .card-img img{
+            height:150px;
+            width:400px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            
+        }
+
+        .txt-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        
+        .amount-section{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+
+        .amount-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #7fa5c2;
+            border-radius: 10px;
+            padding: 15px;
+
+        }
+
+        .left-box{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+            /* background-color: blue; */
+            
+        }
+        
+        .music-icon{
+            height:35px;
+            width: 25px;
+            background-color:antiquewhite;
+            border-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .music-icon img{
+            height: 30px;
+            width: 20px;
+            align-items: center;
+        } 
+        
+        .right-box{
+            display: flex;
+            align-items: center;
+        }
+
+        #change{
+            color: blue;   
+        }
+
+        .payment-box{
+            display: flex;
+            justify-content: center;
+            background-color: #203647;
+            border-radius: 10px;   
+            padding: 20px;         
+        }
+
+        #payment-btn{
+            color: white;
+        }
+
+        .cancel-box-container{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cancel-order a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    
+        <!-- Card section -->
+        <section class= "card ">
+
+            <!-- card Image -->
+            <div class="card-img">
+                <img src="./images/icon.jpg" alt="Card Image" >
+            </div>
+
+            <!-- Card text section -->
+            <div class="txt-box container">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab mollitia deserunt commodi placeat</p>
+            </div>
+
+            <!-- first button -->
+            <section class="amount-section ">
+            <div class="amount-box container">
+
+                <div class="left-box">
+                    <div class="music-icon">
+                        <img src="./images/music.png" alt="music-icon">
+                    </div>
+
+                    <div class="txt-amountbox">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="right-box">
+                    <a href="#" id="change">
+                        Change</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Second button  -->
+            <div class="payment-box container">
+                <div id="payment-btn">Proceed to payment</div>
+
+            </div>
+            <!-- Footer -->
+            <div class="cancel-box-container container">
+                <a href="#" class="cancel-order">Cancel Order</a>
+            </div>
+            </section>
+            
+
+
+        
+
+</body>
+
+</html>
