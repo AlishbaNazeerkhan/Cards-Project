@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background: #2980b9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2c3e50, #2980b9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* background-color: blue; */
+        }
+
+        .container {
+            height: 300px;
+            width: 350px;
+            margin-inline: auto;
+            padding-inline: 20px;
+            background-color: white;
+
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-block: 40px;
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+        
+        p{
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+        }
+        .card {
+            height: 450px;
+            width: 800px;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left-box {
+            height: 100%;
+            width: 50%;
+            color: white;
+            background-color: rgb(108, 21, 108);
+            padding-block: 40px;
+            padding: 15px 30px;
+            flex-direction: column;
+        }  
+
+        .feature-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+            
+
+        .right-box {
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
+        }
+
+
+        .right-box img {
+            height: 450px;
+            width: 400px;            
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="card ">
+            <div class="left-box container">
+                <h1>Get Insides that help your business grow</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae dolorum et dignissimos
+                    facilis enim quidem voluptatem laudantium autem quasi, beatae, veniam nisi.
+                <div class="feature-section">
+                    <div class="feature">
+                        <h2>10K+</h2>
+                        <p>Connections</p>
+                    </div>
+                    <div class="feature">
+                        <h2>214</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="feature">
+                        <h2>12M+</h2>
+                        <p>Views</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="right-box">
+                <img src="./images/icon.jpg" alt="image">
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
